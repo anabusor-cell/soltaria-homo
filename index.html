@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Soltaria</title>
-<meta name="description" content="Soltaria: suelta lo que te pesa y toma lo que te ayuda. Herramientas de regulación emocional.">
+<meta name="description" content="Soltaria: suelta lo que te pesa y toma lo que necesites. Herramientas de regulación emocional.">
 <meta name="color-scheme" content="light dark">
 <style>
 :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -245,7 +245,7 @@ footer { text-align: center; color: var(--muted); font-size: 13px; line-height: 
       <span style="--x:90%;--s:12px;--h:45;--d:8.6s"></span>
     </div>
     <h1>Soltaria</h1>
-    <p class="slogan">Suelta lo que te pesa <strong>y toma lo que te ayuda.</strong></p>
+    <p class="slogan">Suelta lo que te pesa <strong>y toma lo que necesites.</strong></p>
     <p class="intro">Toca la burbuja que más se parezca a lo que sientes ahora. Cada una abre una guía corta con una herramienta para ese momento.</p>
   </header>
 
@@ -350,7 +350,7 @@ const GOATCOUNTER = "soltaria";
 
   const out = document.getElementById("visitas");
   function mostrar(n) {
-    out.textContent = "Esta página se ha abierto " + n + " veces";
+    out.textContent = "Esta página se ha abierto " + n + (String(n) === "1" ? " vez" : " veces");
     out.hidden = false;
   }
   function pedir(path) {
